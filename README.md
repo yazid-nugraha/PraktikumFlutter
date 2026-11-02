@@ -10,19 +10,19 @@
 ### Modul 2 — Flutter Widget and Design
 
 #### 1. Hello World
-[screenshots/hello_world.png]
+<img src="screenshots/hello_world.png" width="260" />
 
 #### 2. Widget Column
-[screenshots/column_widget.png]
+<img src="screenshots/column_widget.png" width="260" />
 
 #### 3. Widget Row
-[screenshots/row_widget.png]
+<img src="screenshots/row_widget.png" width="260" />
 
 #### 4. Form Produk
-[screenshots/produk_form.png]
+<img src="screenshots/produk_form.png" width="260" />
 
 #### 5. Detail Produk
-[screenshots/produk_detail.png]
+<img src="screenshots/produk_detail.png" width="260" />
 
 #### 6. List Data Produk
-[screenshots/produk_page.png]
+<img src="screenshots/produk_page.png" width="260" />
