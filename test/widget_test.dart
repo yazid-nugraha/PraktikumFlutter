@@ -1,16 +1,29 @@
-import 'package:flutter_test/flutter_test.dart';
 import 'package:belajarflutter/main.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  testWidgets('Menampilkan halaman List Data Produk sesuai modul', (
-    WidgetTester tester,
+  testWidgets('Aplikasi menampilkan halaman login sebagai halaman awal', (
+    tester,
   ) async {
     await tester.pumpWidget(const MyApp());
 
-    expect(find.text('List Data Produk'), findsOneWidget);
-    expect(find.text('Kulkas'), findsOneWidget);
-    expect(find.text('Playstation'), findsOneWidget);
-    expect(find.text('Radio'), findsOneWidget);
-    expect(find.text('30000'), findsNWidgets(3));
+    expect(find.text('Login'), findsWidgets);
+    expect(find.text('Username'), findsOneWidget);
+    expect(find.text('Password'), findsOneWidget);
+    expect(find.text('Akun demo: admin / admin'), findsOneWidget);
+  });
+
+  testWidgets('Login menampilkan dialog saat kredensial tidak valid', (
+    tester,
+  ) async {
+    await tester.pumpWidget(const MyApp());
+
+    await tester.enterText(find.byType(TextField).first, 'salah');
+    await tester.enterText(find.byType(TextField).last, 'salah');
+    await tester.tap(find.widgetWithText(FilledButton, 'Login'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Username dan Password Salah'), findsOneWidget);
   });
 }
