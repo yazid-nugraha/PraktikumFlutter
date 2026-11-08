@@ -10,9 +10,25 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Flutter Menu',
-      home: LoginPage(),
+      theme: ThemeData(
+        // Menggunakan Material 2 agar warna komponen sesuai screenshot Modul 3.
+        useMaterial3: false,
+        primarySwatch: Colors.blue,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.blue,
+          foregroundColor: Colors.white,
+          elevation: 4,
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blue,
+            foregroundColor: Colors.white,
+          ),
+        ),
+      ),
+      home: const LoginPage(),
     );
   }
 }
