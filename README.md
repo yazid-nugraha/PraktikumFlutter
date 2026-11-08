@@ -26,33 +26,26 @@
 
 ## Modul 3 — Routes, Side Menu, Login, dan Local Storage
 
-Implementasi Modul 3 menggunakan Flutter dan package `shared_preferences`.
+Implementasi mengikuti struktur dan pola kode pada modul praktikum.
 
 ### Fitur
-- Halaman Login sebagai halaman awal aplikasi.
-- Validasi input username dan password.
-- Kredensial simulasi sesuai contoh Modul 3: **admin / admin**.
-- Penyimpanan username ke local storage menggunakan `SharedPreferences`.
-- Menampilkan username tersimpan pada halaman Home.
-- Drawer / Side Menu dengan navigasi Home dan About.
-- Logout yang menghapus username tersimpan dan kembali ke Login.
+- Login dengan simulasi username dan password `admin`.
+- Penyimpanan username menggunakan `SharedPreferences`.
+- Home Page menampilkan username yang tersimpan.
+- Drawer / Side Menu berisi navigasi Home dan About.
+- About Page dengan Drawer yang sama.
 
-### Struktur file
+### Struktur file Modul 3
 ```text
 lib/
 ├── main.dart
-└── pages/
-    ├── login_page.dart
-    ├── home_page.dart
-    ├── side_menu.dart
-    └── about_page.dart
+├── login_page.dart
+├── home_page.dart
+├── sidemenu.dart
+└── about_page.dart
 ```
 
 ### Menjalankan aplikasi
-1. Pastikan Flutter SDK sudah terpasang.
-2. Jalankan `flutter pub get`.
-3. Jalankan `flutter run`.
-4. Login menggunakan username `admin` dan password `admin`.
-5. Buka Drawer untuk berpindah ke Home atau About.
-
-> Catatan: autentikasi admin/admin hanya simulasi untuk praktikum, bukan sistem autentikasi produksi. Password tidak disimpan ke local storage.
+1. Jalankan `flutter pub get`.
+2. Jalankan `flutter run`.
+3. Login menggunakan username `admin` dan password `admin`.
