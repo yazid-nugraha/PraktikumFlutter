@@ -1,5 +1,5 @@
 name: belajarflutter
-description: "A new Flutter project."
+description: "Praktikum Pemrograman Mobile - Modul 3 Routes, Login, Side Menu, dan Local Storage."
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
-  shared_preferences: ^2.0.17
+  shared_preferences: ^2.5.3
 
 dev_dependencies:
   flutter_test:
